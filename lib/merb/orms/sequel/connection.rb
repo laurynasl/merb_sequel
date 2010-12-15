@@ -58,6 +58,8 @@ module Merb
         
         def config_options(config = {})
           options = {}
+
+          options[:port] = config[:port] if config[:port]
           
           # Use SQLite by default
           options[:adapter]  = (config[:adapter]  || "sqlite")

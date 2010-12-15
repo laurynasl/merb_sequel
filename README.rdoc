@@ -105,6 +105,7 @@ Options are:
 * password. <b>WARNING: default password is an empty string</b>.
 * socket Use socket to connect to DB. 
 * username or user, default is an empty string
+* port
 
 
 == Generators
