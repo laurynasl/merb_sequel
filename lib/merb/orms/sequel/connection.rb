@@ -60,6 +60,8 @@ module Merb
           options = {}
 
           options[:port] = config[:port] if config[:port]
+
+          options[:max_connections] = config[:max_connections] if config[:max_connections]
           
           # Use SQLite by default
           options[:adapter]  = (config[:adapter]  || "sqlite")
